@@ -1,0 +1,69 @@
+<!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920.183" height="1075.636" viewBox="0 0 1920.183 1075.636">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#361cc1"/>
+      <stop offset="1" stop-color="#2e82ef"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <path id="Path_199" data-name="Path 199" d="M-533.031,278.516s95.269,204.193,401.21,161.147,419.656-32.1,544.188,96.892,343.977,107.54,572.909,67.066,360.19,68.158,401.79,142.968c.041-2.4-.074-1075.621-.074-1075.621l-1920,.011Z" transform="translate(533 329)" fill="url(#linear-gradient)"/>
+    </clipPath>
+  </defs>
+  <g id="Group_112" data-name="Group 112" transform="translate(0.089 0.042)">
+    <path id="Path_195" data-name="Path 195" d="M-533.089,278.364s100.43,239.944,401.206,191.477,442.068,9.577,537.63,114.941,352.091,94.329,580.987,52.374S1349.9,678.95,1387.094,746.594c.016.016-.373-1075.609-.373-1075.609l-1919.766-.027Z" transform="translate(533 329)" opacity="0.11" fill="url(#linear-gradient)"/>
+    <path id="Path_194" data-name="Path 194" d="M-533.031,278.516s95.269,204.193,401.21,161.147,419.656-32.1,544.188,96.892,343.977,107.54,572.909,67.066,360.19,68.158,401.79,142.968c.041-2.4-.074-1075.621-.074-1075.621l-1920,.011Z" transform="translate(533 329)" fill="url(#linear-gradient)"/>
+    <g id="Mask_Group_6" data-name="Mask Group 6" clip-path="url(#clip-path)">
+      <path id="Path_4" data-name="Path 4" d="M-496.368,321.285S-322.126-70.761,321.065,66.253s869.415,77.467,1056.161-463.982" transform="translate(522 366.416)" fill="none" stroke="#361cc1" stroke-width="128" opacity="0.14"/>
+    </g>
+  </g>
+</svg> -->
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+		xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+		<defs>
+			<linearGradient id="bg">
+				<stop offset="0%" style="stop-color:rgba(130, 158, 249, 0.06)"></stop>
+				<stop offset="50%" style="stop-color:rgba(76, 190, 255, 0.6)"></stop>
+				<stop offset="100%" style="stop-color:rgba(115, 209, 72, 0.2)"></stop>
+			</linearGradient>
+			<path id="wave" fill="url(#bg)" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+	s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+		</defs>
+		<g>
+			<use xlink:href='#wave' opacity=".3">
+				<animateTransform
+          attributeName="transform"
+          attributeType="XML"
+          type="translate"
+          dur="10s"
+          calcMode="spline"
+          values="270 230; -334 180; 270 230"
+          keyTimes="0; .5; 1"
+          keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+          repeatCount="indefinite" />
+			</use>
+			<use xlink:href='#wave' opacity=".6">
+				<animateTransform
+          attributeName="transform"
+          attributeType="XML"
+          type="translate"
+          dur="8s"
+          calcMode="spline"
+          values="-270 230;243 220;-270 230"
+          keyTimes="0; .6; 1"
+          keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+          repeatCount="indefinite" />
+			</use>
+			<use xlink:href='#wave' opacty=".9">
+				<animateTransform
+          attributeName="transform"
+          attributeType="XML"
+          type="translate"
+          dur="6s"
+          calcMode="spline"
+          values="0 230;-140 200;0 230"
+          keyTimes="0; .4; 1"
+          keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+          repeatCount="indefinite" />
+			</use>
+		</g>
+	</svg>
