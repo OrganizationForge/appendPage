@@ -693,9 +693,10 @@
                     ></textarea>
                   </div>
                   <div class="ud-form-group mb-0">
-                    <button type="submit" class="main-btn">
+                    <!-- <button type="submit" class="main-btn">
                       Enviar mensaje
-                    </button>
+                    </button> -->
+                    <button type="button" class="main-btn" onclick="sendWhatsAppMessage()">Enviar mensaje</button>
                   </div>
                 </form>
               </div>
@@ -720,5 +721,23 @@
     <script src="assets/js/count-up.min.js"></script>
     <script src="assets/js/particles.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script>
+      function sendWhatsAppMessage() {
+        // Get form values
+        const fullName = document.querySelector('input[name="fullName"]').value;
+        const message = document.querySelector('textarea[name="message"]').value;
+      
+        // Pre-compose the WhatsApp message
+        const prefilledMessage = `Hola ${fullName}, gracias por contactarte. Tu mensaje es: ${message}.`;
+      
+        // Create the WhatsApp deep link URL
+        const whatsappUrl = `https://wa.me/+541139214662?text=${encodeURIComponent(prefilledMessage)}`;
+      
+        // Redirect user's browser to open WhatsApp
+        // window.location.href = whatsappUrl;
+        window.open(whatsappUrl, '_blank');
+      }
+      </script>
   </body>
 </html>
