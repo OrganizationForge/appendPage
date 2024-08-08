@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8" />
 
-    <title>Append | Transforma tu negocio hoy</title>
+    <title>Append | Desarrollo de software</title>
 
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Primary Meta Tags -->
-    <meta name="title" content="Append | Transforma tu negocio hoy">
-    <meta name="description" content="Append - Transforma tu negocio hoy">
+    <meta name="title" content="Append | Desarrollo de software">
+    <meta name="description" content="Append - Desarrollo de software">
 
     <!--====== Favicon Icon ======-->
     <link
@@ -569,18 +569,44 @@
     <footer id="footer" class="footer-area">
       <div class="container">
         <div class="pb-100">
+
           <div class="row align-items-center">
-            <div class="row col-lg-8 col-md-7 col-sm-12">
-              <div class="col-12 pt-55">
-                <div class="ud-contact-content-wrapper">
-                  <div class="ud-contact-title">
-                    <!-- <span>CONTACTANOS</span> -->
-                    <h2>
-                      ¿Tenés un proyecto en mente? ¡Conversemos!
-                    </h2>
-                  </div>
+            <div class="col-12">
+              <div class="ud-contact-content-wrapper">
+                <div class="ud-contact-title">
+                  <!-- <span>CONTACTANOS</span> -->
+                  <h2>
+                    ¿Tenés un proyecto en mente? ¡Conversemos!
+                  </h2>
                 </div>
               </div>
+            </div>
+            <div class="col-12" style="display: flex;justify-content: end;">
+              <div
+              class="ud-contact-form-wrapper wow fadeInUp"
+              data-wow-delay=".2s"
+            >
+              <h3 class="ud-contact-form-title">Mandanos tu mensaje</h3>
+              <form class="ud-contact-form">
+                <div class="ud-form-group">
+                  <label for="fullName">Nombre completo*</label>
+                  <input
+                    type="text"
+                    name="fullName"
+                    placeholder="Ingresa tu nombre"
+                  />
+                </div>
+                <div class="ud-form-group mb-0">
+                  <!-- <button type="submit" class="main-btn">
+                    Enviar mensaje
+                  </button> -->
+                 
+                  <button type="button" class="main-btn" onclick="sendWhatsAppMessage()"> <i class="lni lni-whatsapp"> </i> Enviar</button>
+                </div>
+              </form>
+            </div>
+            </div>
+            <div class="row col-12">
               <div class="col-lg-6 col-md-4 col-sm-8">
                 <div
                   class="footer-about mt-50 wow fadeIn"
@@ -588,8 +614,8 @@
                   data-wow-delay="0.2s"
                 >
                   <a class="logo" href="javascript:void(0)">
-                    <img src="assets/images/logo/logo.svg" alt="logo" />
-                    APPEND
+                    <!-- <img src="assets/images/logo/logo.svg" alt="logo" /> -->
+                    <span style="color: white; font-weight: bold;">APPEND</span>
                   </a>
                   <p class="text">
                     Somos expertos en el desarrollo web a medida, creando experiencias digitales únicas para tu audiencia. 
@@ -653,54 +679,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-5 col-sm-12">
-                <div
-                class="ud-contact-form-wrapper wow fadeInUp"
-                data-wow-delay=".2s"
-              >
-                <h3 class="ud-contact-form-title">Mandanos tu mensaje</h3>
-                <form class="ud-contact-form">
-                  <div class="ud-form-group">
-                    <label for="fullName">Nombre completo*</label>
-                    <input
-                      type="text"
-                      name="fullName"
-                      placeholder="Ingresa tu nombre"
-                    />
-                  </div>
-                  <div class="ud-form-group">
-                    <label for="email">Email*</label>
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="ejemplo@gmail.com"
-                    />
-                  </div>
-                  <div class="ud-form-group">
-                    <label for="phone">Tu teléfono*</label>
-                    <input
-                      type="text"
-                      name="phone"
-                      placeholder="11 2233 5566"
-                    />
-                  </div>
-                  <div class="ud-form-group">
-                    <label for="message">Mensaje*</label>
-                    <textarea
-                      name="message"
-                      rows="2"
-                      placeholder="Escribí tu consulta aquí"
-                    ></textarea>
-                  </div>
-                  <div class="ud-form-group mb-0">
-                    <!-- <button type="submit" class="main-btn">
-                      Enviar mensaje
-                    </button> -->
-                    <button type="button" class="main-btn" onclick="sendWhatsAppMessage()">Enviar mensaje</button>
-                  </div>
-                </form>
-              </div>
-            </div>
+
           </div>
           <!-- row -->
         </div>
@@ -726,10 +705,9 @@
       function sendWhatsAppMessage() {
         // Get form values
         const fullName = document.querySelector('input[name="fullName"]').value;
-        const message = document.querySelector('textarea[name="message"]').value;
       
         // Pre-compose the WhatsApp message
-        const prefilledMessage = `Hola ${fullName}, gracias por contactarte. Tu mensaje es: ${message}.`;
+        const prefilledMessage = `Hola ${fullName}, gracias por contactarte con Append.`;
       
         // Create the WhatsApp deep link URL
         const whatsappUrl = `https://wa.me/+541139214662?text=${encodeURIComponent(prefilledMessage)}`;
@@ -738,6 +716,6 @@
         // window.location.href = whatsappUrl;
         window.open(whatsappUrl, '_blank');
       }
-      </script>
+    </script>
   </body>
 </html>
