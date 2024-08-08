@@ -1667,6 +1667,15 @@ p {
   color: var(--white);
 }
 
+.footer-contact .contact li a {
+  color: var(--white);
+}
+
+.footer-contact .contact li a:hover {
+  color: var(--primary-color);
+}
+
+
 .footer-copyright {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   padding-top: 15px;
